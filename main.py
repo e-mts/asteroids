@@ -31,6 +31,7 @@ def main():
             if asteroid.collision(player):
                 print("Game Over!")
                 return
+        player.timer -= dt
         screen.fill("black")
         for item in drawable:
             item.draw(screen)
